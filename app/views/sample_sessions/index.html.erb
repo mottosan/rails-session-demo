@@ -1,0 +1,26 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Variables in Rails Session Cookie</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <td>Key</td>
+      <td colspan="2">Value</td> 
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sample_sessions.each do |k, v| %>
+      <tr>
+        <td><%= k %></td>
+        <td><%= v %></td> 
+        <td><%= link_to "delete", sample_session_path(k), method: :delete %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sample Session', new_sample_session_path %>
