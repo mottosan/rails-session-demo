@@ -11,8 +11,6 @@ module RailsSessionDemo
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
 
-    config.session_store :cookie_store, key: '_rails_session_demo_app', expire_after: 3.days
-
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
